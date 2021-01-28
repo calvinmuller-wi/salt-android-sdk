@@ -36,6 +36,11 @@ buildscript {
     }
 }
 
+repositories {
+    jcenter()
+    google()
+    mavenCentral()
+}
 
 afterEvaluate {
     publishing {
