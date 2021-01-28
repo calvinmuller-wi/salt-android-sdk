@@ -23,11 +23,13 @@ Payment payment = Payment.builder()
                         .build();
 
 try {
+    // This will launch a screen which will allow you to select which app to use eg. SALT DEV, SALT INT
     payment.initiate(view.getContext(), "Pay with");
 } catch (ActivityNotFoundException e) {
     Log.e("Payment", e.toString());
 }
 ```
+![screencap](https://user-images.githubusercontent.com/64589914/106132491-afe03200-616c-11eb-9ecb-96eaefeab3f2.png)
 
 ## Code to use on callback to check result
 ```aidl
